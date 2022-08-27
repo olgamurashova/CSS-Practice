@@ -187,3 +187,40 @@ footer {
     font-size: 1.25rem;
   }
 }
+
+/*Pseudo*/
+nav a:active{
+    color: red;
+}
+
+nav a:any-link{
+    color: #000;
+
+}
+
+nav :is(a:hover, a:focus) {
+    color: hsla(0, 0%, 20%, 0.6);
+}
+
+.card:target {
+    border: 2px solid rebeccapurple;
+
+}
+
+.card img:not([alt]) {
+    border: 10px solid red;
+}
+
+.card:nth-child(odd) {
+    background-color: papayawhip;
+}
+
+.card figcaption:after {
+    content: ' 	\1F680';
+    display: block;
+}
+
+.card figcaption::first-letter {
+    font-size: 3rem;
+    
+}
