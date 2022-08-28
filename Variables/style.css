@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*VARIABLES*/
+:root {
+    /*FONT*/
+    --FontFamily: "Nunito", sans-serif;
+    --FontSize: 1.5rem;
+    --FontSize-XL: 3rem;
+
+    /*COLOR*/
+    --BACKCOL: #475569;
+    --ALT-BACKCOL: #1E293B;
+    --RADIAL-COLOR: whitesmoke;
+    --LIGHT-COLOR: whitesmoke;
+    --DARK-COLOR: #000; 
+
+    /*GENERAL*/
+    --PADDING: 0.5rem;
+    --SHADOW: 0 6px 5px -5px var(--DARK-COLOR);
+    --BORDER: 2px solid var(--DARK-COLOR);
+
+    /*SQUARE CLASS*/
+    --SQ-BACKCOL: papayawhip;
+    --SQ-SIZE: max(150px, 20vw);
+    
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BACKCOL: #000;
+        --ALT-BACKCOL: #333;
+        --RADIAL-COLOR: rgb(237, 218, 218);
+        --SQ-BACKCOL: rgb(229, 170, 229);
+        
+    }
+}
